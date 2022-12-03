@@ -23,5 +23,11 @@ function uAlanGoster() {
 
 function uCevreGoster() {
     let sonuc=parseInt(u2.value)+ parseInt(u3.value)+parseInt(u1.value)
-cevre.innerHTML=sonuc
+    cevre.innerHTML=sonuc
+}
+
+function kAlanGoster() {
+    let kA1 = k1 * k1;
+    console.log(kA1);
+    alan.innerHTML=kA1;
 }
