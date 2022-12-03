@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yaş Hesaplama</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+        body{
+            background-image: url("./yas-hesaplama.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+  
+  </head>
+  <body>
+  <div class="container w-50">
+    <div class="row">
+        <div class="col text-center justify-content-center align-self-center">
+            <div class="baslik display-5 bg-success mt-4">
+                YAŞ HESAPLAMA
+            </div>
+            <div class="hesaplama mt-4 d-flex flex-column justify-content-center">
+                <p>Doğum tarihinizi Girin:</p>
+                <input id="dogumTarihi" class="form-control " type="text" value="">
+                <button id="yasHesapla" onclick="YasiGoster()"class="btn btn-info mt-4">YAŞI HESAPLA</button>                
+            </div>
+
+            <div class="mt-4 display-5">
+                <p>YAŞINIZ:
+                    <span id="goster" >0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+ <script src="yas.js"></script>
+  </body>
+</html>

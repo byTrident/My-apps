@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yaş Hesaplama</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("./arka.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container w-50">
+      <div class="row">
+        <div class="col text-center justify-content-center align-self-center">
+          <div class="baslik display-5 bg-light mt-4">ALAN HESAPLAMA</div>
+
+          <div class="row">
+            <div class="col">
+              Üçgenin Kenarlarını ve yüksekliğini Girin:
+              <input id="u1" class="form-control" type="text" value="" />
+              <input id="u2" class="form-control" type="text" value="" />
+
+              <input id="u3" class="form-control" type="text" value="" />
+              <p>Yükseklik girin:</p>
+              <input id="h" class="form-control" type="text" value="" />
+
+              <div>
+                <button
+                  id="uAlan"
+                  onclick="uAlanGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ALAN
+                </button>
+                <button
+                  id="uCevre"
+                  onclick="uCevreGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ÇEVRE
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              Karenin Kenar Uzunluğunu Girin:
+              <input id="k1" class="form-control" type="text" value="" />
+              <div>
+                <button
+                  id="kAlan"
+                  onclick="kAlanGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ALAN
+                </button>
+                <button
+                  id="kCevre"
+                  onclick="kCevreGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ÇEVRE
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              Dikdörtgenin Kenar Uzunluklarını:
+              <input id="d1" class="form-control" type="text" value="" />
+              <input id="d2" class="form-control" type="text" value="" />
+              <div>
+                <button
+                  id="dAlan"
+                  onclick="dAlanGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ALAN
+                </button>
+                <button
+                  id="dCevre"
+                  onclick="dCevreGoster()"
+                  class="btn btn-info mt-4"
+                >
+                  ÇEVRE
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 display-5">
+            <p>
+              ALAN:
+              <span id="alan">0</span>
+            </p>
+
+            <p>
+              ÇEVRE:
+              <span id="cevre">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="geometri.js"></script>
+  </body>
+</html>
